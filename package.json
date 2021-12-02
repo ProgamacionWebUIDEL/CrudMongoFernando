@@ -1,0 +1,22 @@
+{
+  "name": "crudmongo",
+  "version": "1.0.0",
+  "description": "Es un proyecto de crud en mongo desarrollado por los estudiantes de 4 ciclo uide loja",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgamacionWebUIDEL/CrudMongoFernando.git"
+  },
+  "author": "fjcalderonq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProgamacionWebUIDEL/CrudMongoFernando/issues"
+  },
+  "homepage": "https://github.com/ProgamacionWebUIDEL/CrudMongoFernando#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
