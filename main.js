@@ -1,6 +1,11 @@
 const express = require("express");
 
 const app = express();
+const indexPelicula = require("./router/rutasPeliculas");
+const connection=require("./config/conexion");
+//ruteo de APIS
+app.use('/', indexPelicula)
+
 
 app.get("/hola", (req, res)=>{
 
