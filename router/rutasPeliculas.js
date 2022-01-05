@@ -4,4 +4,5 @@ const express = require('express'),
 
 
 router.use('/peliculas', pelicula);
+
 module.exports=router;

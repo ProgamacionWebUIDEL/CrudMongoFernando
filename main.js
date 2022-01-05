@@ -3,6 +3,11 @@ const express = require("express");
 const app = express();
 const indexPelicula = require("./router/rutasPeliculas");
 const connection=require("./config/conexion");
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+
 //ruteo de APIS
 app.use('/', indexPelicula)
 
