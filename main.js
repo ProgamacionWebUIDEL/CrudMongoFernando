@@ -4,6 +4,9 @@ const app = express();
 const index = require("./router/rutas");
 const connection=require("./config/conexion");
 const bodyParser = require("body-parser");
+const cors = require('cors');
+
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
@@ -53,6 +56,6 @@ app.get("/exponencial", (req, res)=>{
     res.json({message : "la respuesta es --> "+exponencial});
 });
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 8000 , ()=>{
     console.log("servidor levantado");
 });
